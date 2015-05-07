@@ -1,82 +1,23 @@
-<div class="contain-to-grid sticky">
-		<nav class="top-bar centered" data-topbar role="navigation" data-options="sticky_on: large">
-			<ul class="title-area">
-				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
-				</li>
-			</ul>
-			<section class="top-bar-section">
-				<ul class="left tiptop">
-					<li><a href="index.php"><%= link_to "Home", root_path %></a>
-					</li>
-				</ul>
-				<ul class="left">
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Welcome</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
 
-					<li class="has-dropdown">
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="has-dropdown">
+        <a href="#">Hello, User</a>
+        <ul class="dropdown">
+          <li><a href="#">Settings</a></li>
+          <li class="active"><a href="#">Log Out</a></li>
+        </ul>
+      </li>
+    </ul>
 
-						<a><%= link_to "Blog", blog_path %></a>
-
-						<ul class="dropdown">
-
-							<li><a><%= link_to "Current Blog Page", blog_path %></a>
-
-							</li>
-
-							<li><a><%= link_to "Past Dear Teacher", teacher_path %></a>
-
-							</li>
-							<li><a><%= link_to "Past Dear Parent", parent_path %></a>
-
-							</li>
-
-						</ul>
-
-					</li>
-
-				</ul>
-
-
-
-				<ul class="left">
-
-					<li class="has-dropdown">
-
-						<a><%= link_to "Work With Me", work_path %></a>
-
-						<ul class="dropdown">
-
-							<li><a><%= link_to "What I Do", work_path %></a>
-
-							</li>
-
-							<li><a><%= link_to "Services", services_path %></a>
-
-							</li>
-
-							<li><a><%= link_to "Contact", contact_path %></a>
-
-							</li>
-
-						</ul>
-
-					</li>
-
-				</ul>
-
-
-
-				<ul class="left">
-
-					<li><a><%= link_to "About", about_path %></a>
-
-					</li>
-
-				</ul>
-
-
-
-			</section>
-
-		</nav>
-
-	</div>
+  </section>
+</nav>

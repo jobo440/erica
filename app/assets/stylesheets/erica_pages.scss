@@ -55,9 +55,7 @@ li{
 font-size: .83em;
 
 }
-.top-bar-section {
-	font-family: Libre Baskerville;
-}
+
 .photopocket {
 	position: absolute;
 }
@@ -105,16 +103,24 @@ position: relative;
 	height: 90px;
 	text-align: center
 }
-.painting {
-	background: url("../images/footer4.jpg") no-repeat;
-	background-position: center;
-}
-nav.top-bar {
-	text-align: center;
+
+/*TOPBAR*/
+nav.top-bar{
+	text-align:center;
 }
 section.top-bar-section {
 	display: inline-block;
 }
+.top-bar-section {
+	font-family: Libre Baskerville;
+}
+
+.dropdown {
+	position: relative;
+	left: 3em;
+}
+
+
 .introtext {
 	margin-bottom: 1em;
 	font-size:15pt;
@@ -206,12 +212,12 @@ section.top-bar-section {
     position: relative;
     top:2.2em;
 }
-/* SERVICES */
+/* Services */
 .quote{
     font-style: italic;
 }
 
-/* WORK */
+/* Work */
 .medium {
 font-size:1.4em;
 }
@@ -224,14 +230,14 @@ font-size:1.4em;
     background-color:#C4EAE2;
     padding:1em;
 }
-/* CONTACT */
+/* Contact */
 .contact-section{
     background-color:#C4EAE2;
     margin-top:1em;
     margin-bottom:1em;
     
 }
-/* CONTACT BOX  */
+/* Contact Box  */
 
 
 .contacttext{
@@ -243,4 +249,10 @@ position: relative;
 .contactbutton{
 position: relative;
 right: .9em;
+}
+
+/* Title */
+.painting {
+	background-image: image-url("footer4.jpg");
+	background-position: center;
 }
