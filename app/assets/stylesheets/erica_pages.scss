@@ -1,3 +1,246 @@
-// Place all the styles related to the erica_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+
+
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+
+
+/* DID NOT WORK
+@font-face {
+    font-family: 'texgyreheroscnregular';
+    src: url('../fonts/texgyreheroscn-regular-webfont.eot');
+    src: url('../fonts/texgyreheroscn-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyreheroscn-regular-webfont.woff') format('woff'),
+         url('../fonts/texgyreheroscn-regular-webfont.ttf') format('truetype'),
+         url('../fonts/texgyreheroscn-regular-webfont.svg#texgyreheroscnregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body, li, p {
+ font-family:'Open Sans', sans-serif;   
+}
+
+h1 {
+
+}
+
+h2 {
+	font-family: 'Crimson Text';
+	font-size: 5.5em;
+	color: white;
+}
+h3 {
+	font-family: 'Crimson Text';
+	font-size: 3em;
+
+	color: white;
+}
+h4{
+    font-family:'Open Sans', sans-serif;
+    color:#2A1A38;
+    font-size: 1.7em;
+    font-weight:600;
+}
+li{
+font-size: .83em;
+
+}
+.top-bar-section {
+	font-family: Libre Baskerville;
+}
+.photopocket {
+	position: absolute;
+}
+.teachertitle {
+	position: relative;
+	left: 1em;
+	margin-bottom: -2em;
+}
+.text-centered {
+	text-align: center
+}
+.datebox{
+	position:absolute;
+	height:80px;
+	width:80px;
+	left:-80px;
+
+	background:#FAFBFD;
+	text-align: center;
+	
+}
+.wrapper{
+position: relative;
+}
+.header {
+	background-color: #DDBBC9;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90px;
+	text-align: center
+}
+.margin-top {
+	margin-top: 1em;
+}
+
+.margin-bottom {
+    margin-bottom: 1em;   
+}
+.inputbar {} .bottom {
+	background: url("../images/footer5.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90px;
+	text-align: center
+}
+.painting {
+	background: url("../images/footer4.jpg") no-repeat;
+	background-position: center;
+}
+nav.top-bar {
+	text-align: center;
+}
+section.top-bar-section {
+	display: inline-block;
+}
+.introtext {
+	margin-bottom: 1em;
+	font-size:15pt;
+	margin-bottom: 2em;
+}
+#toggleButton {
+	background: none;
+	border: 0;
+	font-size: 16px;
+
+	color: #A35E7A;
+	padding: 12px 0 10px 0;
+}
+.TextBox {
+	padding: 1em;
+	padding-bottom: 0em;
+	width: 100%;
+	border: #696A7F thick solid;
+	margin-bottom: 2em;
+	background-color: #FAFBFD;
+}
+#toggleButtontwo {
+	background: none;
+	border: 0;
+	font-size: 16px;
+	color: #CEF6F5;
+	padding: 30px 0 10px 0;
+}
+#toggleButtontwo:hover {
+	color: #fff;
+}
+#mail {
+	margin-bottom: 6em;
+		margin-top: 6em;
+}
+
+#workwithme{
+	padding:4em;
+}
+.photopants {
+	position: relative;
+	top: 2em;
+}
+
+.margin{
+	margin-bottom: 6em;
+	margin-top:3em;
+}
+
+.TextBoxtwo {
+	padding: 1em;
+	width: 100%;
+	/*This is CSS3… Don't forget that less advanced web browsers such as Internet Exploder won't be able to read this code. So if you open your page on said browser the text box will appear but will not have a rounded border or even a drop shadow… I know it sucks*/
+	/*boarder curve*/
+	-moz-border-radius: 12px;
+	/* FF1-3.6 */
+	-webkit-border-radius: 12px;
+	/* Saf3-4, iOS 1-3.2, Android <1.6 */
+	border-radius: 12px;
+	/* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+	/* useful if you don't want a bg color from leaking outside the border: */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	/*shadow behing box*/
+	-moz-box-shadow: 0px 0px 4px #1C1C1C;
+	/* FF3.5+ */
+	-webkit-box-shadow: 0px 0px 4px #1C1C1C;
+	/* Saf3.0+, Chrome */
+	box-shadow: 0px 0px 4px #1C1C1C;
+	/* Opera 10.5, IE9, Chrome 10+ */
+
+}
+
+.heart {
+
+	position: relative;
+	top: -4em;
+}
+
+.border{
+    border:black solid 2px;
+}
+#intro{
+    font-size: .8em;
+}
+
+#circleimage{
+    position: relative;
+    top:2.2em;
+}
+/* SERVICES */
+.quote{
+    font-style: italic;
+}
+
+/* WORK */
+.medium {
+font-size:1.4em;
+}
+
+.ericapicwork{
+    margin-left: 9em;
+}
+
+.assessmentbox{
+    background-color:#C4EAE2;
+    padding:1em;
+}
+/* CONTACT */
+.contact-section{
+    background-color:#C4EAE2;
+    margin-top:1em;
+    margin-bottom:1em;
+    
+}
+/* CONTACT BOX  */
+
+
+.contacttext{
+font-size: 1.2em;
+position: relative;
+    left:.9em;
+}
+
+.contactbutton{
+position: relative;
+right: .9em;
+}
