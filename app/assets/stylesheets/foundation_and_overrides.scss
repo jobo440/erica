@@ -193,13 +193,13 @@ $secondary-color: #3392E2;
 // $cursor-help-value: help;
 // $cursor-text-value: text;
 
-// e. Typography
+// e. Typography **(Defined in erica_pages.scss)
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
- $header-font-family: Rock Salt;
+//$header-font-family: 'Crimson Text';
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
@@ -208,11 +208,11 @@ $secondary-color: #3392E2;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
 
-// We use these to control header font sizes
+// We use these to control header font sizes 
 // $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
+// $h2-font-size: rem-calc(44);
 // $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
+// $h4-font-size: rem-calc(30);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
@@ -1419,7 +1419,7 @@ $topbar-link-bg-hover: $pink;
  $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 // $topbar-dropdown-link-bg: $oil;
-// $topbar-dropdown-link-bg-hover: $oil;
+ $topbar-dropdown-link-bg-hover: $pink;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;

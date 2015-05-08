@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Crimson Text';
+	font-family: 'Crimson Text', Times;
 	font-size: 5.5em;
 	color: white;
 }
@@ -95,14 +95,7 @@ position: relative;
 .margin-bottom {
     margin-bottom: 1em;   
 }
-.inputbar {} .bottom {
-	background: url("../images/footer5.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	height: 90px;
-	text-align: center
-}
+
 
 /*TOPBAR*/
 nav.top-bar{
@@ -207,11 +200,12 @@ section.top-bar-section {
 #intro{
     font-size: .8em;
 }
-
-#circleimage{
+/* Blog */
+.circleimage{
     position: relative;
     top:2.2em;
 }
+
 /* Services */
 .quote{
     font-style: italic;
@@ -255,4 +249,14 @@ right: .9em;
 .painting {
 	background-image: image-url("footer4.jpg");
 	background-position: center;
+}
+
+/* Footer */
+.bottom {
+	background: image-url("footer5.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90px;
+	text-align: center
 }
