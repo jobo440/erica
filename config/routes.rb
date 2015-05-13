@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 	root 'erica_pages#home'
 	get 'blog' => 'posts#blog'
 	post 'blog' => 'posts#blog'
-	get 'teacher' => 'erica_pages#teacher'
+	get 'teacher' => 'posts#teacher'
 	get 'parent' => 'posts#parent'
 	get 'work' => 'erica_pages#work'
 	get 'services' => 'erica_pages#services'

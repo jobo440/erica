@@ -14,8 +14,8 @@
 			</div>
 		</div>
 		
-
-		<% @posts.each do |post| %>	
+		<% # Iterate through parent posts and render html %>
+		<% @posts.reverse_each do |post| %>	
 			<% if post.section == 'parent' %>
 				<div class="TextBox">
 					<div class="datebox"><p><%= post.date %></p></div>

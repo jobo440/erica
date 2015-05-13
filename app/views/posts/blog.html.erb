@@ -1,10 +1,4 @@
-<% @posts.each do |post| %>
-	<div class="post_wrapper">
-		<h2 class="title"><%= link_to post.title, post %></h2>
-		<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
-	</div>
-<% end %>
-......
+
 <script>$(document).foundation();</script>
 <div class="row margin-top">
 	<div class="large-12 columns">
@@ -37,18 +31,18 @@ Erica
 					</div>
 				</div>
 			</div>
-				<% # Find the number of most recent parent post %>
+				<% # Find the number of most recent parent post and store into @newest_parent_blog %>
 				<% count = [] %>
 				<% @posts.each do |post| %>	
 					<% if post.section == 'parent' %>
 						<% count.push(post.order) %>	
 					<% end %>			
 				<% end %>	
-				<% newestBlog = count.max %>
+				<% @newest_parent_blog = count.max %>
 
 				<% # Fill in html with most recent parent %>
 				<% @posts.each do |post| %>
-					<% if post.order == newestBlog %>
+					<% if post.order == @newest_parent_blog %>
 						<div class="TextBox">
 							<div class="datebox">
 								<p><%= post.date %></p>
@@ -59,10 +53,28 @@ Erica
 					<% end %>
 				<% end %>
 
-
-
 			<!--end TextBox!-->
+								<% # Find the number of most recent teacher post and store into @newest_teacher_blog %>
+				<% count = [] %>
+				<% @posts.each do |post| %>	
+					<% if post.section == 'teacher' %>
+						<% count.push(post.order) %>	
+					<% end %>			
+				<% end %>	
+				<% @newest_teacher_blog = count.max %>
 
+				<% # Fill in html with most recent teacher %>
+				<% @posts.each do |post| %>
+					<% if post.order == @newest_teacher_blog %>
+						<div class="TextBox">
+							<div class="datebox">
+								<p><%= post.date %></p>
+							</div>
+							<h4>Dear Teacher </h4>
+							<p><%= post.body %></p>
+						</div>
+					<% end %>
+				<% end %>
 			<!--end TextBox!-->
 		</div>
 	</div>

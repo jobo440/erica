@@ -1,6 +1,9 @@
 class PostsController < ApplicationController
   def parent
-    @posts = Post.all.order('created_at DESC')
+    @posts = Post.all.order('section')
+  end
+  def teacher
+    @posts = Post.all.order('section')
   end
 
 
