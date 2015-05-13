@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.text :body
       t.string :date
-      t.string :type
+      t.string :section
       t.integer :order
 
       t.timestamps null: false
