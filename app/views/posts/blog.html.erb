@@ -4,3 +4,70 @@
 		<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
 	</div>
 <% end %>
+......
+<script>$(document).foundation();</script>
+<div class="row margin-top">
+	<div class="large-12 columns">
+			<div class="row">
+				<div class="large-5 large-centered columns">
+					<div class="row collapse">
+						<div class="small-9 columns">
+							<input type="text" placeholder="Your Email">
+						</div>
+						<div class="small-3 columns">
+							<a href="#" class="button postfix">Subscribe</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="large-2  columns">
+					<%= image_tag("logo.png", alt: "Erica Wolverton Blog", :class => "circleimage") %>  
+					
+				</div>
+
+				<div class="large-10 columns">
+					<div class="introtext">
+						<p id="intro"><strong>Hello,</strong><br>
+Thank you for peeking in on my virtual note passing between all of our dear parents and dear teachers.  I write these letters from two perspectives in an effort to deepen understandings and to encourage compassionate conversations between the people who matter most in the lives of children - families and teachers. These compassionate letters will serve to make schools better for our kids, better for our teachers and better for the families schools serve.  Just like in the days when we were passing notes in the hallways of our own schools, we can have compassionate conversations to make our  schools great.  <br>
+Compassionately yours,<br>
+Erica
+</p>
+					</div>
+				</div>
+			</div>
+				<% # Find the number of most recent parent post %>
+				<% count = [] %>
+				<% @posts.each do |post| %>	
+					<% if post.section == 'parent' %>
+						<% count.push(post.order) %>	
+					<% end %>			
+				<% end %>	
+				<% newestBlog = count.max %>
+
+				<% # Fill in html with most recent parent %>
+				<% @posts.each do |post| %>
+					<% if post.order == newestBlog %>
+						<div class="TextBox">
+							<div class="datebox">
+								<p><%= post.date %></p>
+							</div>
+							<h4>Dear Parent </h4>
+							<p><%= post.body %></p>
+						</div>
+					<% end %>
+				<% end %>
+
+
+
+			<!--end TextBox!-->
+
+			<!--end TextBox!-->
+		</div>
+	</div>
+	</div>
+
+</body>
+
+</html>

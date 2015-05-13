@@ -1,4 +1,10 @@
 class PostsController < ApplicationController
+  def parent
+    @posts = Post.all.order('created_at DESC')
+  end
+
+
+
   def blog
     @posts = Post.all.order('created_at DESC')
   end

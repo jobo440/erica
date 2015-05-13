@@ -1,0 +1,29 @@
+<script>$(document).foundation();</script>
+<div class="row margin-top">
+	<div class="large-12 columns">
+		<div class="row">
+			<div class="large-5 large-centered columns">
+				<div class="row collapse">
+					<div class="small-9 columns">
+						<input type="text" placeholder="Your Email">
+					</div>
+					<div class="small-3 columns">
+						<a href="#" class="button postfix">Subscribe</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<% @posts.each do |post| %>	
+			<% if post.section == 'parent' %>
+				<div class="TextBox">
+					<div class="datebox"><p><%= post.date %></p></div>
+					<h4>Dear Parent </h4>
+					<p> <%= post.body %> </p>
+				</div>		
+				<!--end TextBox!-->		
+			<% end %>			
+		<% end %>
+	</div>
+</div>
