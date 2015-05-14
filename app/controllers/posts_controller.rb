@@ -46,6 +46,9 @@ class PostsController < ApplicationController
     end
   end
 
+  def show_all_posts
+    @posts = Post.all.order('position')
+  end
   private
 
   def post_params

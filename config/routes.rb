@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 	resources :posts
+	get 'show_all_posts' => 'posts#show_all_posts'
 
 	root 'erica_pages#home'
 	get 'blog' => 'posts#blog'
