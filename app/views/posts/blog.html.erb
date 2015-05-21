@@ -30,8 +30,8 @@ Erica
 </p>
 					</div>
 				</div>
-			</div>
 				<% # Find the number of highest position and store into @newest_parent_blog %>
+			</div>
 				<% count = [] %>
 				<% @posts.each do |post| %>	
 					<% if post.section == 'parent' %>
@@ -42,7 +42,7 @@ Erica
 
 				<% # Fill in html with most recent parent %>
 				<% @posts.each do |post| %>
-					<% if post.position == @newest_parent_blog %>
+					<% if post.position == @newest_parent_blog and post.section == 'parent'%>
 						<div class="TextBox">
 							<div class="datebox">
 								<p><%= post.date %></p>
@@ -65,7 +65,7 @@ Erica
 
 				<% # Fill in html with most recent teacher %>
 				<% @posts.each do |post| %>
-					<% if post.position == @newest_teacher_blog %>
+					<% if post.position == @newest_teacher_blog and post.section == 'teacher'%>
 						<div class="TextBox">
 							<div class="datebox">
 								<p><%= post.date %></p>
