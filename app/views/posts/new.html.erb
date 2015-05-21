@@ -1,20 +1,26 @@
-<h1>New Post</h1>
+<% @proper_title = 'layouts/title' %>
+<div class="row">
+	<div class="large-centered columns">
+		<h1>New Post</h1>
+		<%= form_for @posts do |f| %>
+			<%= f.label :title %><br>
+			<%= f.text_field :title %><br>
+			<br>
+			<%= f.label :body %><br>
+			<%= f.text_area :body, :cols => '50', :rows => '30' %><br>
+			<br>
+			<%= f.label :date %><br>
+			<%= f.text_field :date %><br>
+			<br>
+			<%= f.label :section %><br>
+			<%= f.text_field :section %><br>
+			<br>
+			<%= f.label :position %><br>
+			<%= f.text_field :position %><br>
+			<br>
+			<%= f.submit %>
+		<% end %>
+	</div>
+</div>		
 
-<%= form_for @posts do |f| %>
-	<%= f.label :title %><br>
-	<%= f.text_field :title %><br>
-	<br>
-	<%= f.label :body %><br>
-	<%= f.text_field :body %><br>
-	<br>
-	<%= f.label :date %><br>
-	<%= f.text_field :date %><br>
-	<br>
-	<%= f.label :section %><br>
-	<%= f.text_field :section %><br>
-	<br>
-	<%= f.label :position %><br>
-	<%= f.text_field :position %><br>
-	<br>
-	<%= f.submit %>
-<% end %>
+		

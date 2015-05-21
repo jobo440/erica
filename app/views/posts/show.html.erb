@@ -1,3 +1,4 @@
+<% @proper_title = 'layouts/title' %>
 <div id="post_content">
 	<h1 class="title"><%= @post.title %></h1>
 	<p class="date">
@@ -5,7 +6,7 @@
 		| <%= link_to 'Edit', edit_post_path(@post) %> |
 		  <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
 	</p>
-	<p class="body"><%= @post.body %></p>
+	<p class="body"><%= simple_format @post.body %></p>
 	<h3>Date:</h3>
 	<p><%= @post.date %></p>
 
