@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 	get 'show_all_posts' => 'posts#show_all_posts'
 	get 'new_post' => 'posts#new'
 
+	get 'login' => 'login#login_page'
+
 	root 'erica_pages#home'
 	get 'blog' => 'posts#blog'
 	post 'blog' => 'posts#blog'
