@@ -76,14 +76,7 @@ font-size: 1em;
 .wrapper{
 position: relative;
 }
-.header {
-	background-color: #DDBBC9;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	height: 90px;
-	text-align: center
-}
+
 .margin-top {
 	margin-top: 1em;
 }
@@ -104,11 +97,14 @@ section.top-bar-section {
 	font-family: Libre Baskerville;
 }
 
-.dropdown {
-	position: relative;
-	left: 3em;
+.header {
+	background-color: #DDBBC9;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90px;
+	text-align: center
 }
-
 
 .introtext {
 	margin-bottom: 1em;
@@ -124,12 +120,10 @@ section.top-bar-section {
 	padding: 12px 0 10px 0;
 }
 .TextBox {
-	padding: 1em;
-	padding-bottom: 0em;
-	width: 100%;
 	border: #696A7F thick solid;
 	margin-bottom: 2em;
 	background-color: #FAFBFD;
+	padding-right: 0;
 }
 #toggleButtontwo {
 	background: none;
@@ -146,8 +140,8 @@ section.top-bar-section {
 		margin-top: 6em;
 }
 
-#workwithme{
-	padding:4em;
+.padding{
+	padding:2em;
 }
 .photopants {
 	position: relative;
@@ -206,7 +200,12 @@ section.top-bar-section {
 .quote{
     font-style: italic;
 }
-
+$medium-range: 64em;
+.dissapear-on-medium{
+	@media(max-width: $medium-range) {
+		display:none;
+	}
+}
 /* Work */
 .medium {
 font-size:1.4em;
@@ -218,7 +217,9 @@ font-size:1.4em;
 
 .assessmentbox{
     background-color:#C4EAE2;
-    padding:1em;
+  	border: solid #FFFFFF;
+  	padding:.6em;
+    
 }
 /* Contact */
 .contact-section{

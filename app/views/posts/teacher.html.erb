@@ -9,7 +9,7 @@
 						<input type="text" placeholder="Your Email">
 					</div>
 					<div class="small-3 columns">
-						<a href="#" class="button postfix">Subscribe</a>
+						<a href="#" class="button ">Subscribe</a>
 					</div>
 				</div>
 			</div>
@@ -18,7 +18,7 @@
 		<% # Iterate through teacher posts and render html %>
 		<% @posts.reverse_each do |post| %>	
 			<% if post.section == 'teacher' %>
-				<div class="TextBox">
+				<div class="TextBox padding">
 					<div class="datebox"><p><%= post.date %></p></div>
 					<h4>Dear Teacher </h4>
 					<p> <%= simple_format post.body %> </p>
