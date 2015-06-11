@@ -206,6 +206,9 @@ $medium-range: 64em;
 		display:none;
 	}
 }
+.space {
+	color:#88C2B6;
+}
 /* Work */
 .medium {
 font-size:1.4em;
@@ -221,7 +224,20 @@ font-size:1.4em;
   	padding:.6em;
     
 }
+.nudgeup {
+	position:relative;
+	bottom:.234em;
+}
+.fixlength{
+	height:55em;
+}
 /* Contact */
+.hidden{
+	display:none;
+}
+.button{
+	color:black;
+}
 .contact-section{
     background-color:#C4EAE2;
     margin-top:1em;
