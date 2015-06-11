@@ -10,7 +10,8 @@ Rails.application.routes.draw do
 	get 'parent' => 'posts#parent'
 	get 'work' => 'erica_pages#work'
 	get 'services' => 'erica_pages#services'
-	get 'contact' => 'erica_pages#contact'
 	get 'about' => 'erica_pages#about'
 
+	match '/contact',     to: 'contacts#new',             via: 'get'
+	resources "contacts", only: [:new, :create]
 end
