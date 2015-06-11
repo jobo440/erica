@@ -1,0 +1,41 @@
+<script>$(document).foundation();</script>
+<% @proper_title = 'layouts/title' %>
+  <div class="wrapper">
+
+        
+    <div class="row contact-section">
+      <div class="large-7 column">
+                <br>
+                <h4 class="contacttext"><strong>I'd love to connect with you.<br></strong> Send me an email at ewolvert@hotmail.com or fill out this contact form.</h4>
+<%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <%= f.input :name, :required => true %>
+      <%= f.input :email, :required => true %>
+      <%= f.input :message, :as => :text, :required => true %>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div>
+        </br>
+        <%= f.button :submit, 'Send message', :class=> "button contactbutton" %>
+      </div>
+    <% end %>
+      </div>
+            
+            
+      <div class="large-5 column text-center">
+              
+    
+        
+            <%= image_tag("erica30.jpg", alt: "Erica Wolverton") %>  
+        
+      
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
