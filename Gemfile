@@ -49,6 +49,7 @@ gem 'bcrypt', '3.1.7'
 gem 'foundation-rails'
 gem 'mail_form'
 gem 'simple_form'
+gem 'mailgunner', '~> 1.3.0'
 
 group :development , :test do 
 	gem 'sqlite3' , '1.3.9' 
